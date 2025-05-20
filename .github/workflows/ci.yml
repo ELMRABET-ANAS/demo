@@ -26,5 +26,8 @@ jobs:
     - name: Run Tests
       run: npm test
 
-    - name: Deploy (simulate)
-      run: echo "Deploy step (simulate)"
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
