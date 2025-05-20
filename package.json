@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "echo 'Build step (simulate)'",
     "test": "jest"
   },
   "keywords": [],
